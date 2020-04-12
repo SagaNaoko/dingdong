@@ -1,0 +1,25 @@
+{
+  "name": "dingdong",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify main.js -o bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SagaNaoko/dingdong.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SagaNaoko/dingdong/issues"
+  },
+  "homepage": "https://github.com/SagaNaoko/dingdong#readme",
+  "dependencies": {
+    "browserify": "^16.5.1",
+    "install": "^0.13.0",
+    "moment": "^2.24.0",
+    "npm": "^6.14.4"
+  }
+}
