@@ -1,5 +1,6 @@
 'use strict';
 const Moment = require('moment');
+require('dotenv').config();
 
 //とりあえず昼の休憩まで
 const timeArray = [
@@ -32,7 +33,9 @@ function dingdong() {
 function checkTime() {
   var now = new Moment();
   now = now.format('HH:mm');
-  if (timeArray.includes(now)) {
+  var testTime = document.getElementById('test-time').value;
+
+  if (timeArray.includes(now) || testTime === now) {
     dingdong();
   }
 }
