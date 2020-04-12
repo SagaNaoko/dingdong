@@ -1,13 +1,19 @@
 'use strict';
-
 const Moment = require('moment');
 
+//とりあえず昼の休憩まで
 const timeArray = [
-  '16:30',
-  '16:31',
-  '16:32',
-  '16:33',
-  '16:34',
+  '8:45',
+  '9:30',
+  '9:35',
+  '10:20',
+  '10:45',
+  '11:30',
+  '11:35',
+  '12:20',
+  '13:00',
+  '13:20',
+  '13:40',
 ];
 
 dispTime();
@@ -26,7 +32,7 @@ function dingdong() {
 function checkTime() {
   var now = new Moment();
   now = now.format('HH:mm');
-  if(timeArray.includes(now)) {
+  if (timeArray.includes(now)) {
     dingdong();
   }
 }
@@ -34,10 +40,6 @@ function checkTime() {
 setInterval(function () {
   dispTime();
 }, 1000);
-
-setInterval(function () {
-  dingdong();
-}, 10000);
 
 setInterval(function () {
   checkTime();
