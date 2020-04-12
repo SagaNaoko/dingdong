@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "browserify main.js -o bundle.js"
+    "build": "browserify main.js -o bundle.js",
+    "deploy": "npm install && npm run build"
   },
   "repository": {
     "type": "git",
